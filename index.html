@@ -21,7 +21,17 @@
           .hide()
           .delay("1000")
           .fadeIn("slow")
-          .text("now");
+          .text("now")
+          .click(function() {
+            $("body").css("background", "#C30");
+            $("h1").css("color", "#FFF");
+          });
+
+        $("a").css({ color: "red", display: "block" });
+        $(".link2").css("color", "green");
+        $("#link3").css("color", "#000");
+        $("*").css("padding", "1%");
+        $("h1, #link3").css("border-bottom", "solid 3px blue");
       });
     </script>
   </head>
